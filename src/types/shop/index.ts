@@ -6,3 +6,7 @@ export type TShopNav = {
 export type TShopMarketing = {
   marketingList: string[] | [];
 };
+
+export type TShopCommunication = {
+  communicationList: string[] | [];
+};
