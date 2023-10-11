@@ -1,5 +1,5 @@
 import { Camera } from 'three';
-import { createControls } from 'systems/controls';
+import { createControls } from 'utils/systems/controls';
 
 export const createLandingControls = (camera: Camera, domElement: HTMLElement) => {
   const controls = createControls(camera, domElement);

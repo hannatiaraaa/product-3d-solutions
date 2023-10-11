@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
 import { createLandingCamera } from './components/camera';
-import { createRenderer } from 'systems/renderer';
-import { Resizer } from 'systems/Resizer.class';
+import { createRenderer } from 'utils/systems/renderer';
+import { onResize } from 'utils/systems/onResize';
 import { createModel } from './components/model';
 import { createFireworks } from './components/fireworks';
 import { createLandingControls } from './systems/controls';
@@ -20,14 +20,10 @@ const LandingScene = () => {
 
     const { camera, animateCamera } = createLandingCamera();
     let renderer = createRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth, window.innerHeight);
 
-    let resizer;
-    if (canvas) {
-      canvas.appendChild(renderer.domElement);
-      resizer = new Resizer(canvas, camera, renderer);
-    }
+    canvas?.appendChild(renderer.domElement);
 
+    onResize(camera, renderer);
     const animateModel = createModel(scene, mixerRef);
     const animateFireworks = createFireworks(scene);
     const controls = createLandingControls(camera, renderer.domElement);
