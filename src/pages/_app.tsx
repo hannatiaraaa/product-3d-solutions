@@ -4,7 +4,7 @@ import { inter } from 'configs/fonts';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={inter.className}>
+    <main className={`overflow-hidden ${inter.className}`}>
       <Component {...pageProps} />
     </main>
   );
