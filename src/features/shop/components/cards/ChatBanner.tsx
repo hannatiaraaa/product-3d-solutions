@@ -1,7 +1,7 @@
 import React from 'react';
 import { sacramento } from 'configs/fonts';
 import Image from 'next/image';
-import payever from 'assets/payever.svg';
+import logo from 'assets/logo.svg';
 import { BsInstagram, BsMessenger, BsWhatsapp } from 'react-icons/bs';
 import type { TPanelConfig } from 'types/panelConfig.type';
 
@@ -45,8 +45,8 @@ const LiveChatBanner = () => (
   <RenderContainer className='flex flex-col items-center bg-gradient-to-br from-[#C7EEEA] to-[#F0F1FF]'>
     <p className={`${sacramento.className} text-primary font-medium text-4xl`}>livechat</p>
     <Image
-      src={payever}
-      alt='payever'
+      src={logo}
+      alt='logo'
       className='h-[0.625rem] object-contain'
     />
   </RenderContainer>
@@ -54,7 +54,7 @@ const LiveChatBanner = () => (
 
 const ChatBanner = ({ name }: TPanelConfig) => {
   switch (name) {
-    case 'payever Message':
+    case 'Live Chat':
       return <LiveChatBanner />;
 
     case 'Instagram':

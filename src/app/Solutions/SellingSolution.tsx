@@ -1,6 +1,6 @@
 import LandingScene from 'features/landing/LandingScene';
 import ProductsScene from 'features/products/ProductsScene';
-import PayeverShop from 'features/shop/PayeverShop';
+import ShopExample from 'features/shop/ShopExample';
 import type { TPanelConfig } from 'types/panelConfig.type';
 import type { TShopCommunication, TShopMarketing } from 'types/shop';
 
@@ -11,17 +11,17 @@ export const RenderSellingSolution = ({ name, isToggled, marketingList = [], com
     return <LandingScene />;
   } else {
     switch (name) {
-      case 'payever Shop':
+      case 'Shop':
         return (
           <div className='bg-white rounded-md'>
-            <PayeverShop
+            <ShopExample
               marketingList={marketingList}
               communicationList={communicationList}
             />
           </div>
         );
 
-      case 'payever Products':
+      case 'Products':
         return <ProductsScene />;
 
       default:

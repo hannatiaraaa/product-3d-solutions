@@ -1,27 +1,27 @@
 import type { TPanelConfig } from 'types/panelConfig.type';
 
 const icons = {
-  payever_shop: require('assets/panelConfig/payeverShop.svg'),
-  payever_products: require('assets/panelConfig/payeverProducts.svg'),
+  shop: require('assets/panelConfig/shop.svg'),
+  products: require('assets/panelConfig/products.svg'),
   amazon: require('assets/panelConfig/amazon.svg'),
   ebay: require('assets/panelConfig/ebay.svg'),
   facebook: require('assets/panelConfig/facebook.svg'),
   instagram: require('assets/panelConfig/instagram.svg'),
   pinterest: require('assets/panelConfig/pinterest.svg'),
   google_ads: require('assets/panelConfig/google_ads.svg'),
-  payever_message: require('assets/panelConfig/payeverMessage.svg'),
+  message: require('assets/panelConfig/message.svg'),
   fb_messenger: require('assets/panelConfig/fb_messenger.svg'),
   whatsapp: require('assets/panelConfig/whatsapp.svg'),
 };
 
 const selling: TPanelConfig[] = [
   {
-    name: 'payever Shop',
-    icon: icons.payever_shop,
+    name: 'Shop',
+    icon: icons.shop,
   },
   {
-    name: 'payever Products',
-    icon: icons.payever_products,
+    name: 'Products',
+    icon: icons.products,
   },
   {
     name: 'Amazon',
@@ -54,8 +54,8 @@ const marketing: TPanelConfig[] = [
 
 const communication: TPanelConfig[] = [
   {
-    name: 'payever Message',
-    icon: icons.payever_message,
+    name: 'Live Chat',
+    icon: icons.message,
   },
   {
     name: 'Instagram',

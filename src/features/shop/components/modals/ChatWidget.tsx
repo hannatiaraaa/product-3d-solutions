@@ -3,7 +3,7 @@ import { FaPaperPlane, FaUserCircle } from 'react-icons/fa';
 import { MdInsertEmoticon } from 'react-icons/md';
 import { FaCirclePlus } from 'react-icons/fa6';
 import Image from 'next/image';
-import payeverMessage from 'assets/payeverMessage.svg';
+import messageLogo from 'assets/messageLogo.svg';
 
 type Props = {
   isOpen: boolean;
@@ -17,7 +17,7 @@ const ChatWidget = ({ isOpen, children }: Props) => {
         isOpen ? 'block' : 'hidden'
       } z-10 bg-black/70 backdrop-blur-xl border-[1.5px] border-border-container rounded-xl w-3/4 lg:w-1/5 h-[36rem] absolute bottom-[7%] right-[3%] flex flex-col justify-between py-2`}
     >
-      <p className='text-white font-semibold text-sm text-center'>payever Shop Bot</p>
+      <p className='text-white font-semibold text-sm text-center'>Shop Chat Bot</p>
       <div className='bg-chat-base h-5/6 p-2'>{children}</div>
       <div className='flex justify-between items-center gap-2 w-full py-2 px-3'>
         <span className='text-chat-base'>
@@ -42,8 +42,8 @@ const ChatWidget = ({ isOpen, children }: Props) => {
       </div>
       <div className='bg-neutral-500 w-full h-[0.5px]' />
       <Image
-        src={payeverMessage}
-        alt='payever'
+        src={messageLogo}
+        alt='message logo'
         className='h-4 w-full text-center mt-2 mb-1'
       />
     </div>

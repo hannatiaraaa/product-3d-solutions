@@ -13,7 +13,7 @@ import Amount from './components/cards/Amount';
 import ChatWidget from './components/modals/ChatWidget';
 import { RenderShopCommunication } from 'app/Solutions/shop/Communication';
 
-const PayeverShop = ({
+const ShopExample = ({
   marketingList = [],
   communicationList = [],
 }: Partial<TShopMarketing> & Partial<TShopCommunication>) => {
@@ -91,4 +91,4 @@ const PayeverShop = ({
   );
 };
 
-export default PayeverShop;
+export default ShopExample;
